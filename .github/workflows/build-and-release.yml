@@ -1,11 +1,7 @@
 name: Build & Release heytea-diy
-
 on:
   push:
-    branches: [ main ]
     tags: [ 'v*' ]
-  pull_request:
-    branches: [ main ]
   workflow_dispatch:   # 手动触发
 
 permissions:
@@ -94,7 +90,7 @@ jobs:
 
       - name: Prepare release assets
         run: |
-          cp artifacts/heytea-diy-windows-x64/heytea-diy-windows.zip .
+          cp artifacts/heytea-diy-windows/heytea-diy-windows.zip .
           cp artifacts/heytea-diy-macos-arm64/heytea-diy-macos-arm64.zip .
           cp artifacts/heytea-diy-macos-intel/heytea-diy-macos-x86_64.zip .
         shell: bash
@@ -108,10 +104,9 @@ jobs:
             自动构建发布：${{ github.ref_name }}
 
             包含：
-            - Windows x64: heytea-diy-windows-x64.zip
-            - Windows x86: heytea-diy-windows-x86.zip
+            - Windows x64: heytea-diy-windows.zip
             - macOS ARM64: heytea-diy-macos-arm64.zip
-            - macOS Intel: heytea-diy-macos-intel.zip
+            - macOS Intel: heytea-diy-macos-x86_64.zip
           artifacts: "heytea-diy-windows.zip,heytea-diy-macos-arm64.zip,heytea-diy-macos-x86_64.zip"
           draft: false
           prerelease: false
