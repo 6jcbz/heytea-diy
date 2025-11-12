@@ -2,7 +2,7 @@
 
 ### 1. 包含的文件
 
-从 [GitHub Release]([Releases · BienBoy/heytea-diy](https://github.com/BienBoy/heytea-diy/releases)) 下载合适的程序 heytea-diy-windows.zip，解压后，目录中应包含：
+从 [GitHub Release](https://github.com/BienBoy/heytea-diy/releases) 下载合适的程序 heytea-diy-windows.zip，解压后，目录中应包含：
 
 * `heytea-diy.exe`
 * `heytea-diy.ps1`
@@ -127,7 +127,7 @@ http://mitm.it
 
 ### 1. 包含的文件
 
-从 [GitHub Release]([Releases · BienBoy/heytea-diy](https://github.com/BienBoy/heytea-diy/releases)) 下载合适的程序 heytea-diy-macos-\*.zip，解压后，macOS 目录中应包含：
+从 [GitHub Release](https://github.com/BienBoy/heytea-diy/releases) 下载合适的程序 heytea-diy-macos-\*.zip，解压后，macOS 目录中应包含：
 
 * `heytea-diy`
 * `heytea-diy.sh`
