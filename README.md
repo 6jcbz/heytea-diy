@@ -10,7 +10,7 @@
 
 ### 2. 配置代理
 
-**以管理员身份打开 PowerShell**
+**以管理员身份打开 PowerShell——方法一**
 
 在文件夹上方输入 `powershell` 按回车打开 PowerShell。
 
@@ -25,6 +25,30 @@ Start-Process PowerShell -Verb RunAs "-noexit -command Set-Location -LiteralPath
 在弹窗中选择是。
 
 ![用户权限powershell](assets/用户权限powershell.png)
+
+<div style="color:red">确保终端前面显示的路径是存放程序的文件夹，且窗口标题中有管理员三字！</div>
+
+如果打开失败，可以使用方法二。
+
+**以管理员身份打开 PowerShell——方法二**
+
+点击 Windows 徽标，在搜索框中输入 powershell，并选择以管理员权限打开。
+
+![管理员权限打开powershell](assets/管理员权限打开powershell.png)
+
+打开程序所在文件夹，在地址栏复制文件夹路径。
+
+![复制文件夹路径](assets/复制文件夹路径.png)
+
+在 powershell 中输入命令：
+
+```
+cd 复制的内容
+```
+
+![切换路径](assets/切换路径.png)
+
+<div style="color:red">确保终端前面显示的路径是存放程序的文件夹，且窗口标题中有管理员三字！</div>
 
 **允许执行本地脚本（如果第一次运行）**
 
