@@ -12,6 +12,17 @@ def read_image(path='target.png'):
     with open(path, 'rb') as f:
         return f.read()
 
+def read_image_with_fallback(path='target.png'):
+    image = read_image(path)
+    if not image:
+        directory = os.path.dirname(path)
+        for file in os.listdir(directory):
+            if file.endswith(('.png', '.PNG')):
+                image = read_image(os.path.join(directory, file))
+                if image:
+                    break
+    return image
+
 
 class Heytea:
     def request(self, flow: http.HTTPFlow):
@@ -30,7 +41,7 @@ class Heytea:
                     name = match.group(1)
                     filename = match.group(2)
                     content_type = part.headers[b'Content-Type'].decode()
-                    parts[name] = (filename, read_image(), content_type)
+                    parts[name] = (filename, read_image_with_fallback(), content_type)
                 else:
                     pattern = r'name="(.*?)"'
                     match = re.search(pattern, part.headers[b'Content-Disposition'].decode())
